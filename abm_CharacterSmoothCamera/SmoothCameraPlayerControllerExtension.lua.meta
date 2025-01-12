@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 996682e407cbd914f932c73afe54515e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: apwf_bettercharacters.unity3d
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: ff82a7deccd147088458b7946bd373b1, type: 3}
