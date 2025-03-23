@@ -183,8 +183,8 @@ local BasePCEClass = Class(BasePCE)
 function BasePCE:load()
 
     local ExtensionsScripts = {
-        { ref = CineCPCE, name = "CineCPCE" },
-        --{ ref = SmoothCPCE, name = "SmoothCPCE" },
+        { ref = ThirdPerCamPCE, name = "ThirdPerCamPCE" },
+        { ref = SmoothCPCE, name = "SmoothCPCE" },
     }
 
     for k, v in ipairs(ExtensionsScripts) do 

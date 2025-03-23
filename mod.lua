@@ -1,8 +1,8 @@
 return {
     author              = "Jérôme (APWF)",
-    version             = "WIP",
+    version             = "dev-00.00.00.02",
     title               = "  - [APWF] Better Characters",
-    description         = "this mod include 3 major enhancement : \r\n - Customizable Characters \r\n - Cinematic Camera - \r\n - Better walking Camera",
+    description         = "this mod include 3 major enhancement : \r\n - Customizable Characters \r\n - Third Person Camera - \r\n - Improved First Person Camera",
     targetGame          = "WRS-S2",
     supportsMultiplayer = true,
 
@@ -15,11 +15,8 @@ return {
         "CustomCharactersPrefabs.lua",
         "CustomCharactersToolKit.lua",
 
-        -------------------- Cinematic Camera Script ----------------------
-        "CinematicController.lua",
-        "CCChatCommands.lua",
-        "CinematicCameraPlayerControllerExtension.lua",
-        "CinematicHUD.lua",
+        ------------------- Third Person Camera Script ----------------------
+        -- 
 
         ------------------- Better Walking Camera Script ------------------
         "PlayerControllerCamera.lua",

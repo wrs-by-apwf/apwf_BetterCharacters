@@ -2,7 +2,7 @@ BaseBetterCharacters = BaseBetterCharacters or {}
 addModListener(BaseBetterCharacters)
 
 local mod
-mod, abm_bettercharactersBundleId = ModLoader.getModByName("abm_bettercharacters")
+mod, apwf_bettercharactersBundleId = ModLoader.getModByName("apwf_bettercharacters")
 mod = nil
 
 function BaseBetterCharacters:preLoad()
@@ -62,21 +62,21 @@ function BaseBetterCharacters:prepareDashMenu()
         return
     end
  
-    if abm_dashmenu ~= nil then
-        self:pushDashMenu(abm_dashmenu.AirborneDashMenu)
-        print("dash menu found abm_dashmenu.AirborneDashMenu")
+    if apwf_dashmenu ~= nil then
+        self:pushDashMenu(apwf_dashmenu.AirborneDashMenu)
+        print("dash menu found apwf_dashmenu.AirborneDashMenu")
         return
     end
 
-    if mods ~= nil and mods.abm_dashmenu ~= nil then
-        self:pushDashMenu(mods.abm_dashmenu.AirborneDashMenu)
-        print("dash menu found mods.abm_dashmenu.AirborneDashMenu")
+    if mods ~= nil and mods.apwf_dashmenu ~= nil then
+        self:pushDashMenu(mods.apwf_dashmenu.AirborneDashMenu)
+        print("dash menu found mods.apwf_dashmenu.AirborneDashMenu")
         return
     end
 
-    if mod ~= nil and mod.abm_dashmenu ~= nil then
-        self:pushDashMenu(mod.abm_dashmenu.AirborneDashMenu)
-        print("dash menu found mod.abm_dashmenu.AirborneDashMenu")
+    if mod ~= nil and mod.apwf_dashmenu ~= nil then
+        self:pushDashMenu(mod.apwf_dashmenu.AirborneDashMenu)
+        print("dash menu found mod.apwf_dashmenu.AirborneDashMenu")
         return
     end
 
@@ -89,5 +89,5 @@ end
 
 function BaseBetterCharacters:onDashMenuLoaded(DashMenuScript)
     print("dash menu loaded on BaseBetterCharacters")
-    DashMenuScript:addMod("abm_bettercharacters", false, "DashMenuLogo", function() local player = g_scenario.player player:selectCustomController(player.PLAYMODE_CINEMATIC) end, "right_right")
+    DashMenuScript:addMod("apwf_bettercharacters", false, "DashMenuLogo", function() local player = g_scenario.player player:selectCustomController(player.PLAYMODE_CINEMATIC) end, "right_right")
 end
