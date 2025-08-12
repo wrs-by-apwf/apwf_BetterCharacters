@@ -1,0 +1,1 @@
+InputMapper:addKey("CustomCharacters", "CC_OpenCloset", "E")

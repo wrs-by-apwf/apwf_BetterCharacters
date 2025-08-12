@@ -1,0 +1,1 @@
+ModLoader.registerPrefab("BaseClosetCol")
